@@ -16,10 +16,11 @@ yarn-debug.log*
 yarn-error.log*
 
 # Development folders and files
-public
-src
-scripts
-config
-.travis.yml
-CHANGELOG.md
-README.md
+
+# public
+# src
+# scripts
+# config
+# .travis.yml
+# CHANGELOG.md
+# README.md
