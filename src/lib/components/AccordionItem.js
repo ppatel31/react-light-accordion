@@ -5,16 +5,18 @@ import classNames from 'classnames';
 
 class AccordionItem extends Component {
   static propTypes = {
-    title: PropTypes.string
+    title: PropTypes.string,
+    isOpen: PropTypes.bool
   };
 
   static defaultProps = {
-    title: 'TITLE'
+    title: 'TITLE',
+    isOpen: false
   };
 
   constructor(props) {
     super(props);
-    this.state = { isOpen: false };
+    this.state = { isOpen: props.isOpen };
     this.mounted = true;
   }
 

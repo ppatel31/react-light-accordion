@@ -31,7 +31,7 @@ const App = () => (
     <h1>React Accordion</h1>
     <Accordion atomic={true}>
 
-      <AccordionItem title="Title 1">
+      <AccordionItem title="Title 1" isOpen={true}>
         <DummyContent />
       </AccordionItem>
 
@@ -67,3 +67,4 @@ export default App;
 |  :---------:  | :----: |  :----:  | :-------: | :----------- |
 |   Accordion   | atomic |  `bool`  |  `false`  | False means multiple accordion items can be active at the same time
 | AccordionItem |  title | `string` |   TITLE   | Defines the title of accordion items|
+| AccordionItem | isOpen |  `bool`  |  `false`  | False means accordion collapsed, pass true for open
