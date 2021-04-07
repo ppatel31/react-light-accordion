@@ -21,13 +21,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/farbodsalimi/react-light-accordion"
+    "url": "git+https://github.com/ppatel/react-light-accordion"
   },
   "author": "Farbod Salimi <info@farbod-salimi.com>",
   "bugs": {
-    "url": "https://github.com/farbodsalimi/react-light-accordion/issues"
+    "url": "https://github.com/ppatel/react-light-accordion/issues"
   },
-  "homepage": "https://github.com/farbodsalimi/react-light-accordion#readme",
+  "homepage": "https://github.com/ppatel/react-light-accordion#readme",
   "license": "MIT",
   "dependencies": {
     "classnames": "^2.2.5"
