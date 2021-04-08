@@ -63,8 +63,11 @@ export default App;
 
 ### Properties
 
-|   Component   |  Name  |   Type   |  Default  |  Description  |
-|  :---------:  | :----: |  :----:  | :-------: | :----------- |
-|   Accordion   | atomic |  `bool`  |  `false`  | False means multiple accordion items can be active at the same time
-| AccordionItem |  title | `string` |   TITLE   | Defines the title of accordion items|
-| AccordionItem | isOpen |  `bool`  |  `false`  | False means accordion collapsed, pass true for open
+|   Component   |  Name     |   Type   |  Default  |  Description  |
+|  :---------:  | :----:    |  :----:  | :-------: | :----------- |
+|   Accordion   | atomic    |  `bool`  |  `false`  | False means multiple accordion items can be active at the same time |
+| AccordionItem | title     | `string` |   TITLE   | Defines the title of accordion items |
+| AccordionItem | isOpen    |  `bool`  |  `false`  | False means accordion collapsed, pass true for open |
+| AccordionItem | className | `string` |   ''      | Defines the class of accordion items |
+| AccordionItem | titleClass| `string` |   ''      | Defines the class of accordion title |
+| AccordionItem | panelClass| `string` |   ''      | Defines the class of accordion content |

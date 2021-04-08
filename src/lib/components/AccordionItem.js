@@ -6,17 +6,28 @@ import classNames from 'classnames';
 class AccordionItem extends Component {
   static propTypes = {
     title: PropTypes.string,
-    isOpen: PropTypes.bool
+    isOpen: PropTypes.bool,
+    className: PropTypes.string,
+    titleClass: PropTypes.string,
+    panelClass: PropTypes.string
   };
 
   static defaultProps = {
     title: 'TITLE',
-    isOpen: false
+    isOpen: false,
+    className: '',
+    titleClass: '',
+    panelClass: ''
   };
 
   constructor(props) {
     super(props);
-    this.state = { isOpen: props.isOpen };
+    this.state = {
+      isOpen: props.isOpen,
+      className: props.className,
+      titleClass: props.titleClass,
+      panelClass: props.panelClass
+    };
     this.mounted = true;
   }
 
@@ -50,6 +61,7 @@ class AccordionItem extends Component {
   render() {
     const accordionItemClassNames = classNames([
       'accordion-item',
+      this.state.className,
       {
         active: this.state.isOpen
       }
@@ -57,10 +69,15 @@ class AccordionItem extends Component {
 
     return (
       <div className={accordionItemClassNames}>
-        <button className="title" onClick={this.onClick}>
+        <div
+          className={`title ${this.state.titleClass}`}
+          onClick={this.onClick}
+        >
           {this.props.title}
-        </button>
-        <div className="panel">{this.props.children}</div>
+        </div>
+        <div className={`panel ${this.state.panelClass}`}>
+          {this.props.children}
+        </div>
       </div>
     );
   }
